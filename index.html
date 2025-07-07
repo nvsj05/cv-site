@@ -17,22 +17,23 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background: #f5f0e1; /* light beige */
-    color: #222; /* almost black */
+    background: #f8f5f0; /* lighter beige */
+    color: #1C2D40; /* subtle dark navy */
     line-height: 1.6;
   }
 
   a {
-    color: #8B5E3C;
+    color: #1C2D40; /* dark navy links */
     text-decoration: none;
   }
 
   a:hover {
+    color: #587291; /* steel blue hover */
     text-decoration: underline;
   }
 
   nav {
-    background: #8B5E3C; /* deep brown */
+    background: #7B6F63; /* warm taupe */
     text-align: center;
     padding: 10px 0;
     position: sticky;
@@ -52,20 +53,20 @@
   }
 
   h1, h2, h3 {
-    color: #111;
+    color: #0D1B2A; /* deep blue headers */
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   h1 {
     font-size: 2.5rem;
-    border-bottom: 3px solid #8B5E3C;
+    border-bottom: 3px solid #7B6F63; /* taupe border */
     padding-bottom: 0.3rem;
   }
 
   h2 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #d6cdbf;
+    border-bottom: 2px solid #d6cdbf; /* keep subtle */
     padding-bottom: 0.2rem;
     margin-top: 2rem;
   }
@@ -74,7 +75,7 @@
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
-    color: #8B5E3C;
+    color: #7B6F63; /* taupe headings */
   }
 
   section {
@@ -86,6 +87,24 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
 
+  /* Image sizing */
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+  }
+
+  /* New profile pic class for specific size + roundness + subtle shadow */
+  .profile-pic {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
@@ -95,7 +114,7 @@
   }
 
   .contact-form button {
-    background: #8B5E3C;
+    background: #7B6F63; /* taupe button */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -105,7 +124,7 @@
   }
 
   .contact-form button:hover {
-    background: #6a4329;
+    background: #5b4f43;
   }
 
   .skills-list, .hobbies-list {
@@ -118,7 +137,7 @@
   }
 
   .skills-list li, .hobbies-list li {
-    background: #8B5E3C;
+    background: #7B6F63; /* taupe pills */
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -130,17 +149,11 @@
     margin-right: 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #8B5E3C;
+    color: #7B6F63;
   }
 
   .social-icons a:hover {
-    color: #6a4329;
-  }
-
-  img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin: 10px 0;
+    color: #5b4f43;
   }
 
   @media (max-width: 600px) {
@@ -151,13 +164,25 @@
     section {
       padding: 15px 20px;
     }
+
+    /* Smaller profile pic on mobile */
+    .profile-pic {
+      width: 140px;
+    }
   }
 </style>
 </head>
 <body>
+  <nav>
+  <a href="#summary">Summary</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
   <section>
-    <img src="images/001.jpg" alt="My photo">
+    <img src="images/001.jpg" alt="Jaswanth Naraharisetty" class="profile-pic">
     <h1>Jaswanth Naraharisetty</h1>
     <p><em>Innovative Industrial Automation Student | Bachelor’s in Industrial Automation | Driving Innovation & Operational Excellence</em></p>
     <div class="contact-info">
@@ -369,12 +394,6 @@
 
 
 </body>
-<nav>
-  <a href="#summary">Summary</a>
-  <a href="#skills">Skills</a>
-  <a href="#education">Education</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+
 
 </html>
