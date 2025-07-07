@@ -3,154 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>Jaswanth Naraharisetty — Industrial Automation Student</title>
   <meta name="description" content="The professional portfolio and CV for Jaswanth Naraharisetty, an innovative student in Industrial Automation.">
 
-  <!-- Social Media Meta Tags (for sharing on LinkedIn, Twitter, etc.) -->
-  <meta property="og:title" content="Jaswanth Naraharisetty — Professional CV">
-  <meta property="og:description" content="Exploring the skills, projects, and experience of an Industrial Automation student.">
-  <meta property="og:image" content="images/profile.jpg"> <!-- IMPORTANT: Replace with a link to your profile image on the server -->
-  <meta property="og:url" content="https://your-netlify-url.com"> <!-- IMPORTANT: Replace with your live site URL -->
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Inter (A clean, professional sans-serif) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
   <!-- Your Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
   <!-- Favicon (replace with your own) -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
 </head>
 <body>
 
   <nav class="main-nav">
-    <div class="container">
-      <a href="#summary">Summary</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <a href="#summary">Summary</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <main class="container">
-    <!-- Hero Header Section -->
-    <header class="card hero-header">
+
+    <!-- Hero Section -->
+    <header class="hero-section">
       <img src="images/001.jpg" alt="A professional headshot of Jaswanth Naraharisetty" class="profile-pic">
-      <div class="hero-text">
-        <h1>Jaswanth Naraharisetty</h1>
-        <p class="subtitle">Innovative Industrial Automation Student | Driving Innovation & Operational Excellence</p>
-        <div class="contact-info">
-          <a href="mailto:naraharisetty.vsj@gmail.com">✉️ naraharisetty.vsj@gmail.com</a>
-          <a href="https://www.linkedin.com/in/naraharisetty" target="_blank" rel="noopener">🔗 LinkedIn</a>
-          <a href="https://github.com/nvsj05" target="_blank" rel="noopener">🐙 GitHub</a>
-          <span>📞 +420 776764462</span>
-        </div>
+      <h1>Jaswanth Naraharisetty</h1>
+      <p class="subtitle">Innovative Industrial Automation Student | Driving Innovation & Operational Excellence</p>
+      <div class="social-links">
+        <a href="mailto:naraharisetty.vsj@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/naraharisetty" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/nvsj05" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="tel:+420776764462" title="Phone"><i class="fas fa-phone"></i></a>
       </div>
     </header>
 
     <!-- Summary Section -->
-    <section id="summary" class="card">
+    <section id="summary">
       <h2>Summary</h2>
-      <p>As a dedicated industrial automation student pursuing a B.S. in Applied Informatics, I combine strong technical expertise with a passion for innovation. I am proficient in PLC programming, object-oriented programming (C++, C#, Python), and robotics, with extensive hands-on experience building and programming industrial application models. I thrive in dynamic environments, enjoy working collaboratively, and am committed to staying at the forefront of industry trends to solve real-world problems.</p>
+      <p>
+        As a dedicated industrial automation student studying for a B.S. in Applied Informatics in Industrial Automation, I combine technical expertise with a passion for innovation. I am proficient in PLC programming, object-oriented programming, and robotics, with hands-on experience building industrial application models. I thrive in dynamic environments, working collaboratively and staying at the forefront of industry trends.
+      </p>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="card">
-      <h2>Skills</h2>
+    <section id="skills">
+      <h2>Top Skills</h2>
       <ul class="skills-list">
         <li>Robotics</li>
-        <li>PLC Programming</li>
         <li>C++</li>
-        <li>C#</li>
+        <li>PLC Programming</li>
+        <li>Object-Oriented Programming (OOP)</li>
         <li>Python</li>
-        <li>Object-Oriented Programming</li>
         <li>VAL 3 (Staubli)</li>
+        <li>C#</li>
         <li>RAPID (ABB)</li>
+        <li>C</li>
         <li>Ladder Logic</li>
         <li>Structured Text</li>
-        <li>C</li>
       </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-      <div class="project-grid">
-
-        <div class="project-item">
-          <h3>Castle Building with ABB Cobot</h3>
-          <p>An ABB collaborative robot (Cobot) builds creative castle designs with blocks using RAPID programming for precision and safety. Features dynamic designs and advanced block-handling algorithms.</p>
-        </div>
-        
-        <div class="project-item">
-          <h3>Tic-Tac-Toe with Staubli Robot</h3>
-          <p>A 6-axis Staubli robot physically plays Tic-Tac-Toe using blocks, controlled by an AI algorithm and a touchscreen interface for human-vs-computer gameplay.</p>
-        </div>
-
-        <div class="project-item">
-          <h3>Conveyor with Object Sorting</h3>
-          <p>PLC-controlled conveyor system that detects objects with sensors and sorts them by size using robotic arms, featuring real-time feedback and fault detection.</p>
-        </div>
-        
-        <div class="project-item">
-          <h3>AI Chat & Image Generation App</h3>
-          <p>A C# application leveraging OpenAI’s API to simulate conversational AI for answering questions and generating images based on user prompts.</p>
-        </div>
-        
-        <div class="project-item">
-          <h3>Cricketers Database Management System</h3>
-          <p>Desktop C# app for managing a cricket player database with a backend API for full CRUD (Create, Read, Update, Delete) operations.</p>
-        </div>
-
-        <div class="project-item">
-          <h3>Robotic Assembly Station</h3>
-          <p>A Staubli robot assembles small components, simulating an industrial assembly line with precise placement and efficient task sequencing.</p>
-        </div>
-
-      </div>
-    </section>
-
     <!-- Education Section -->
-    <section id="education" class="card">
+    <section id="education">
       <h2>Education</h2>
       <div class="education-item">
         <h3>Tomas Bata University, Zlin (Studying)</h3>
-        <p><strong>Bachelor of Science in Applied Informatics in Industrial Automation</strong> | AVG 1.25</p>
+        <p>Bachelor of Science in Applied Informatics in Industrial Automation | AVG 1.25</p>
       </div>
       <div class="education-item">
         <h3>Holy Cross Junior College — May 2023</h3>
-        <p><strong>Intermediate Public Examination</strong> — 78.4% in Mathematics, Physics, Chemistry</p>
+        <p>Intermediate Public Examination — 78.4% in Mathematics, Physics, Chemistry</p>
       </div>
     </section>
 
-    <!-- Hobbies & Languages Section -->
-    <footer class="card-group">
-      <div id="contact" class="card">
-        <h3>Contact & Links</h3>
-        <p>I'm always open to discussing new projects and opportunities.</p>
-        <div class="contact-links">
-          <a href="mailto:naraharisetty.vsj@gmail.com" class="button">Email Me</a>
-          <a href="https://www.linkedin.com/in/naraharisetty" class="button" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      
+      <div class="project-item">
+        <h3>Industrial Robotics: Castle Building with ABB Cobot</h3>
+        <p>ABB cobot builds castles with blocks using RAPID programming for precision and creativity, featuring dynamic castle designs and advanced block-handling algorithms.</p>
       </div>
-      <div class="card">
-        <h3>Languages & Interests</h3>
-        <p><strong>Languages:</strong> English (Fluent), German (A1)</p>
-        <ul class="hobbies-list">
-          <li>Badminton</li>
-          <li>Content Creation</li>
-          <li>Swimming</li>
-          <li>Roller Skating</li>
-        </ul>
+
+      <div class="project-item">
+        <h3>Industrial Robotics: Tic-Tac-Toe with Staubli 6-Axis Robot</h3>
+        <p>Staubli robot plays Tic-Tac-Toe with physical blocks, supporting human-vs-human and human-vs-computer modes with a touchscreen interface and AI gameplay algorithm.</p>
+      </div>
+
+      <div class="project-item">
+        <h3>PLC Programming: Conveyor Belt with Object Detection & Sorting</h3>
+        <p>PLC-controlled conveyor system detects objects with sensors and sorts by size using robot arms, featuring real-time sensor feedback and fault detection.</p>
+      </div>
+      
+      <div class="project-item">
+        <h3>Object-Oriented Programming: AI Chat App</h3>
+        <p>An application leveraging OpenAI’s API to simulate conversational AI, with features like question answering and image generation.</p>
+      </div>
+      
+      <div class="project-item">
+        <h3>Object-Oriented Programming: Cricketers Database Management System</h3>
+        <p>Desktop app managing a cricket player database with a backend API for full CRUD (Create, Read, Update, Delete) operations.</p>
+      </div>
+      
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact">
+      <h2>Contact Me</h2>
+      <p>I am actively seeking opportunities and collaborations. Feel free to reach out.</p>
+      <a href="mailto:naraharisetty.vsj@gmail.com" class="button">naraharisetty.vsj@gmail.com</a>
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/naraharisetty" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/nvsj05" target="_blank" rel="noopener">GitHub</a>
       </div>
     </footer>
-  </main>
 
+  </main>
 </body>
 </html>
