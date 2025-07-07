@@ -1,156 +1,25 @@
-/* --- Color Palette & Font Variables --- */
-:root {
-  --bg-color: #F8F9FA;         /* Very Light Soft Gray */
-  --content-bg: #FFFDF5;       /* Creamy Off-White */
-  --text-color: #0A2342;       /* Dark Navy Blue */
-  --primary-accent: #CC5500;   /* Burnt Orange */
-  --secondary-accent: #A84300; /* Darker Burnt Orange for Hover */
-  --h2-underline: #d7bfa6;     /* Your original subtle beige for H2 */
-  --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* --- Your Original CSS, with updated variables and font --- */
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: var(--font-family); /* UPDATED FONT */
-  margin: 0;
-  padding: 20px;
-  background: var(--bg-color); /* UPDATED COLOR */
-  color: var(--text-color); /* UPDATED COLOR */
+  font-family: Arial, sans-serif;
   line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: #f5f5f5;
+  color: #333;
 }
-
-a {
-  color: var(--primary-accent); /* UPDATED COLOR */
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--secondary-accent);
-}
-
-nav {
-  background: var(--text-color); /* UPDATED COLOR */
+header {
   text-align: center;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
-
-nav a {
-  color: var(--bg-color); /* UPDATED COLOR */
-  font-weight: bold;
-  margin: 0 15px;
-  text-decoration: none;
+.profile {
+  width: 120px;
+  border-radius: 50%;
 }
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3 {
-  color: var(--text-color); /* UPDATED COLOR */
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.5rem;
-  border-bottom: 3px solid var(--primary-accent); /* UPDATED COLOR */
-  padding-bottom: 0.3rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-  border-bottom: 2px solid var(--h2-underline); /* Kept your original color */
-  padding-bottom: 0.2rem;
+section {
   margin-top: 2rem;
 }
-
-h3 {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 0.2rem;
-  color: var(--primary-accent); /* UPDATED COLOR */
-}
-
-section {
-  max-width: 900px;
-  margin: 0 auto 2rem auto;
-  background: var(--content-bg); /* UPDATED COLOR */
-  padding: 20px 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(11, 29, 81, 0.08); /* Softened shadow */
-}
-
-/* --- NEW: Styles for the Contact Icons --- */
-.contact-icons {
-  text-align: center;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
-
-.contact-icons a {
-  font-size: 1.5rem; /* Adjust size of icons */
-  color: var(--text-color);
-}
-
-.contact-icons a:hover {
-  color: var(--primary-accent);
-  text-decoration: none; /* No underline on icons */
-  transform: scale(1.1);
-}
-
-/* --- Your Original Styles Continue --- */
-.skills-list, .hobbies-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.5rem;
-}
-
-.skills-list li, .hobbies-list li {
-  background: var(--primary-accent); /* UPDATED COLOR */
-  color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
 .profile-pic {
-  display: block; /* Center image correctly */
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
-}
-
-img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  section {
-    padding: 15px 20px;
-  }
+  width: 180px;
+  border-radius: 50%;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }

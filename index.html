@@ -4,26 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jaswanth Naraharisetty — Industrial Automation Student</title>
-
-  <!-- Added for new font and icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  
  <style>
-  /* --- UPDATED: Color Palette & Font Variables --- */
-  :root {
-    --bg-color: #F8F9FA;         /* Very Light Soft Gray */
-    --content-bg: #FFFDF5;       /* Creamy Off-White */
-    --text-color: #0A2342;       /* Dark Navy Blue */
-    --primary-accent: #CC5500;   /* Burnt Orange */
-    --secondary-accent: #A84300; /* Darker Burnt Orange for Hover */
-    --h2-underline: #d7bfa6;     /* Your original subtle beige for H2 */
-    --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  /* --- Your Original CSS, with updated variables and font --- */
   html {
     scroll-behavior: smooth;
   }
@@ -33,27 +14,26 @@
   }
 
   body {
-    font-family: var(--font-family); /* UPDATED FONT */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background: var(--bg-color); /* UPDATED COLOR */
-    color: var(--text-color); /* UPDATED COLOR */
+    background: #f8f5f0; /* lighter beige */
+    color: #1C2D40; /* subtle dark navy */
     line-height: 1.6;
   }
 
   a {
-    color: var(--primary-accent); /* UPDATED COLOR */
+    color: #1C2D40; /* dark navy links */
     text-decoration: none;
-    transition: color 0.2s ease;
   }
 
   a:hover {
-    color: var(--secondary-accent); /* UPDATED COLOR */
+    color: #587291; /* steel blue hover */
     text-decoration: underline;
   }
 
   nav {
-    background: var(--text-color); /* UPDATED COLOR */
+    background: #7B6F63; /* warm taupe */
     text-align: center;
     padding: 10px 0;
     position: sticky;
@@ -62,7 +42,7 @@
   }
 
   nav a {
-    color: var(--bg-color); /* UPDATED COLOR */
+    color: white;
     font-weight: bold;
     margin: 0 15px;
     text-decoration: none;
@@ -73,22 +53,20 @@
   }
 
   h1, h2, h3 {
-    color: var(--text-color); /* UPDATED COLOR */
+    color: #0D1B2A; /* deep blue headers */
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-    font-weight: 700; /* Added for font consistency */
   }
 
   h1 {
     font-size: 2.5rem;
-    font-weight: 800;
-    border-bottom: 3px solid var(--primary-accent); /* UPDATED COLOR */
+    border-bottom: 3px solid #7B6F63; /* taupe border */
     padding-bottom: 0.3rem;
   }
 
   h2 {
     font-size: 1.8rem;
-    border-bottom: 2px solid var(--h2-underline); /* Kept your original color */
+    border-bottom: 2px solid #d6cdbf; /* keep subtle */
     padding-bottom: 0.2rem;
     margin-top: 2rem;
   }
@@ -97,36 +75,58 @@
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
-    color: var(--primary-accent); /* UPDATED COLOR */
+    color: #7B6F63; /* taupe headings */
   }
 
   section {
     max-width: 900px;
     margin: 0 auto 2rem auto;
-    background: var(--content-bg); /* UPDATED COLOR */
+    background: white;
     padding: 20px 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(11, 29, 81, 0.08);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
 
-  /* --- NEW: Style for the Contact Icons --- */
-  .contact-icons {
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  .contact-icons a {
-    font-size: 1.5rem; /* Adjust icon size */
-    color: var(--text-color);
-    margin: 0 12px; /* Space between icons */
+  /* Image sizing */
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
   }
 
-  .contact-icons a:hover {
-    color: var(--primary-accent);
-    text-decoration: none; /* No underline on icons */
+  /* New profile pic class for specific size + roundness + subtle shadow */
+  .profile-pic {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  /* --- Your original CSS continues... --- */
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .contact-form button {
+    background: #7B6F63; /* taupe button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background: #5b4f43;
+  }
+
   .skills-list, .hobbies-list {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +137,7 @@
   }
 
   .skills-list li, .hobbies-list li {
-    background: var(--primary-accent); /* UPDATED COLOR */
+    background: #7B6F63; /* taupe pills */
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -149,23 +149,11 @@
     margin-right: 15px;
     text-decoration: none;
     font-weight: bold;
-    color: var(--primary-accent); /* UPDATED COLOR */
+    color: #7B6F63;
   }
 
   .social-icons a:hover {
-    color: var(--secondary-accent); /* UPDATED COLOR */
-  }
-  
-  .profile-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin: 10px 0;
+    color: #5b4f43;
   }
 
   @media (max-width: 600px) {
@@ -176,30 +164,26 @@
     section {
       padding: 15px 20px;
     }
+
+    /* Smaller profile pic on mobile */
+    .profile-pic {
+      width: 140px;
+    }
   }
 </style>
 </head>
 <body>
-  <!-- Your Original HTML, with only the contact info div changed -->
-  <nav>
-    <a href="#summary">Summary</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
   <section>
-    <img src="images/001.jpg" alt="Jaswanth Naraharisetty" class="profile-pic">
     <h1>Jaswanth Naraharisetty</h1>
     <p><em>Innovative Industrial Automation Student | Bachelor’s in Industrial Automation | Driving Innovation & Operational Excellence</em></p>
-    
-    <!-- UPDATED: Replaced your old contact div with this icon one -->
-    <div class="contact-icons">
-      <a href="mailto:naraharisetty.vsj@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/naraharisetty" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/nvsj05" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="tel:+420776764462" title="Phone"><i class="fas fa-phone"></i></a>
+    <div class="contact-info">
+      <p>
+        📞 +420 776764462 (Mobile) <br />
+        ✉️ <a href="mailto:naraharisetty.vsj@gmail.com">naraharisetty.vsj@gmail.com</a> <br />
+        🔗 <a href="https://www.linkedin.com/in/naraharisetty" target="_blank" rel="noopener">LinkedIn Profile</a> | 
+        <a href="https://github.com/nvsj05" target="_blank" rel="noopener">GitHub</a>
+      </p>
     </div>
   </section>
 
@@ -391,14 +375,6 @@
       <li>Adaptability for varied products.</li>
     </ul>
   </section>
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <p>
-    📧 <a href="mailto:naraharisetty.vsj@gmail.com">naraharisetty.vsj@gmail.com</a><br>
-    🐙 <a href="https://github.com/nvsj05" target="_blank">GitHub: @nvsj05</a><br>
-    🔗 <a href="https://www.linkedin.com/in/naraharisetty" target="_blank">LinkedIn: /naraharisetty</a>
-  </p>
-</section>
 
 </body>
 </html>
