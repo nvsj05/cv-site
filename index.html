@@ -17,23 +17,22 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background: #f8f5f0; /* lighter beige */
-    color: #1C2D40; /* subtle dark navy */
+    background: #f9fafb; /* very light soft gray */
+    color: #0b1d51; /* very dark navy blue */
     line-height: 1.6;
   }
 
   a {
-    color: #1C2D40; /* dark navy links */
+    color: #d35400; /* burnt orange */
     text-decoration: none;
   }
 
   a:hover {
-    color: #587291; /* steel blue hover */
     text-decoration: underline;
   }
 
   nav {
-    background: #7B6F63; /* warm taupe */
+    background: #0b1d51; /* dark navy for nav */
     text-align: center;
     padding: 10px 0;
     position: sticky;
@@ -42,7 +41,7 @@
   }
 
   nav a {
-    color: white;
+    color: #f9fafb; /* light gray for nav links */
     font-weight: bold;
     margin: 0 15px;
     text-decoration: none;
@@ -53,20 +52,20 @@
   }
 
   h1, h2, h3 {
-    color: #0D1B2A; /* deep blue headers */
+    color: #0b1d51;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   h1 {
     font-size: 2.5rem;
-    border-bottom: 3px solid #7B6F63; /* taupe border */
+    border-bottom: 3px solid #d35400; /* burnt orange underline */
     padding-bottom: 0.3rem;
   }
 
   h2 {
     font-size: 1.8rem;
-    border-bottom: 2px solid #d6cdbf; /* keep subtle */
+    border-bottom: 2px solid #d7bfa6; /* light orange-beige */
     padding-bottom: 0.2rem;
     margin-top: 2rem;
   }
@@ -75,35 +74,18 @@
     font-size: 1.2rem;
     margin-top: 1rem;
     margin-bottom: 0.2rem;
-    color: #7B6F63; /* taupe headings */
+    color: #d35400;
   }
 
   section {
-    max-width: 900px;
-    margin: 0 auto 2rem auto;
-    background: white;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  }
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+  background: #fef9f0; /* creamy off-white */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(11, 29, 81, 0.1); /* subtle navy shadow */
+}
 
-  /* Image sizing */
-  img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin: 10px 0;
-  }
-
-  /* New profile pic class for specific size + roundness + subtle shadow */
-  .profile-pic {
-    width: 180px;
-    border-radius: 50%;
-    margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .contact-form input, .contact-form textarea {
     width: 100%;
@@ -114,7 +96,7 @@
   }
 
   .contact-form button {
-    background: #7B6F63; /* taupe button */
+    background: #d35400;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -124,7 +106,7 @@
   }
 
   .contact-form button:hover {
-    background: #5b4f43;
+    background: #a84300; /* darker burnt orange */
   }
 
   .skills-list, .hobbies-list {
@@ -137,7 +119,7 @@
   }
 
   .skills-list li, .hobbies-list li {
-    background: #7B6F63; /* taupe pills */
+    background: #d35400;
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -149,11 +131,17 @@
     margin-right: 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #7B6F63;
+    color: #d35400;
   }
 
   .social-icons a:hover {
-    color: #5b4f43;
+    color: #a84300;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
   }
 
   @media (max-width: 600px) {
@@ -163,11 +151,6 @@
 
     section {
       padding: 15px 20px;
-    }
-
-    /* Smaller profile pic on mobile */
-    .profile-pic {
-      width: 140px;
     }
   }
 </style>
